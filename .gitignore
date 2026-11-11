@@ -1,0 +1,16 @@
+.classpath
+.project
+.settings/
+target/
+*.class
+test-output/
+reports/
+*.log
+logs/
+.idea/
+.env
+credentials.json
+.DS_Store
+Thumbs.db
+allure-report/
+allure-results/
