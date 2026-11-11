@@ -1,0 +1,17 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.14.0",
+    "playwright-bdd": "^9.2.1"
+  }
+}
