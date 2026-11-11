@@ -1,0 +1,15 @@
+<suite name="Mobile Automation Suite" parallel="false">
+
+    <test name="Mobile Initial Execution">
+        <classes>
+            <class name="testRunner.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Mobile Failed Scenario Rerun">
+        <classes>
+            <class name="testRunner.FailedTestRunner"/>
+        </classes>
+    </test>
+
+</suite>
