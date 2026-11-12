@@ -4,9 +4,9 @@
 
 This repository serves as a centralized platform for maintaining Quality Assurance (QA) documentation, test cases, automation frameworks and testing execution reports.
 
-It covers multiple testing activities, including Manual Testing, Web Automation (Normal Framework, Hybrid Framework and Playwright), Mobile Automation, API Testing and Performance Testing.
+It covers multiple testing activities, including Manual Testing, Responsive Testing, Web Automation (Normal Framework, Hybrid Framework and Playwright), Mobile Automation, API Testing and Performance Testing.
 
-The repository aims to standardize testing documentation, improve test traceability, maintain reusable automation frameworks and provide easy access to QA deliverables.
+The repository aims to standardize testing documentation, improve test traceability, maintain reusable automation frameworks, validate application responsiveness across different screen sizes and provide easy access to QA deliverables.
 
 ## 2. Repository Structure
 
@@ -15,7 +15,10 @@ QA-FrameWork-Documentation/
 │
 ├── 01_Manual_Test_Cases/
 │   ├── README.md
-│   └── Test_Cases.xlsx
+│   ├── Test_Cases.xlsx
+│   └── Responsive_Testing/
+│       ├── Responsive_Testcase_Format.xlsx
+│       └── Responsive_Testing_Defect_Log.xlsx
 │
 ├── 02_Web_Automation/
 │   ├── README.md
@@ -46,7 +49,8 @@ QA-FrameWork-Documentation/
 | Testing Activity | Description | Tools |
 |---|---|---|
 | Manual Testing | Functional test case preparation and execution for Web and Mobile applications | Excel |
-| Web Automation – Normal Framework | Automated functional testing of Web applications using a basic Selenium framework | Java, Selenium |
+| Responsive Testing | Validation of application layouts, elements and functionality across different screen sizes and resolutions | Excel, Browser DevTools |
+| Web Automation – Cucumber Framework | Automated functional testing of Web applications using a basic Selenium framework | Java, Selenium, Cucumber |
 | Web Automation – Hybrid Framework | Reusable automation framework using Page Object Model, utilities and BDD-based execution | Java, Selenium, Cucumber, TestNG, Maven |
 | Web Automation – Playwright | Automated Web application testing using Playwright | Playwright, JavaScript/TypeScript |
 | Mobile Automation | Automated functional testing of Android applications | Java, Appium, Cucumber, TestNG |
@@ -57,6 +61,8 @@ QA-FrameWork-Documentation/
 
 - Maintain centralized QA documentation.
 - Standardize manual test case formats.
+- Validate application responsiveness across different devices, screen sizes and resolutions.
+- Maintain responsive test cases and defect tracking documentation.
 - Maintain reusable Selenium, Hybrid and Playwright automation frameworks.
 - Maintain reusable Mobile automation frameworks.
 - Document API test scenarios and execution results.
@@ -77,6 +83,7 @@ Install the following tools before cloning:
 - Node.js and npm for Playwright projects
 - Eclipse IDE or IntelliJ IDEA for Java frameworks
 - VS Code or another suitable IDE for Playwright
+- Web browsers and browser developer tools for responsive testing
 
 Verify Git installation:
 
@@ -106,28 +113,28 @@ git branch -a
 
 ### Clone a Specific Branch
 
-**Manual Testing**
+**Manual Testing and Responsive Testing**
 
 ```bash
 git clone -b Manual-Test-Cases https://github.com/shankar-guru/QA-FrameWork-Documentation.git
 ```
 
-**Web Automation – Normal Framework**
+**Web Automation – Cucumber Framework**
 
 ```bash
-git clone -b Web-Automation https://github.com/shankar-guru/QA-FrameWork-Documentation.git
+git clone -b Web-Automation-CucumberFramwork https://github.com/shankar-guru/QA-FrameWork-Documentation.git
 ```
 
 **Web Automation – Hybrid Framework**
 
 ```bash
-git clone -b Web-Hybrid-Automation https://github.com/shankar-guru/QA-FrameWork-Documentation.git
+git clone -b Web-Automation-HybridFramework https://github.com/shankar-guru/QA-FrameWork-Documentation.git
 ```
 
 **Web Automation – Playwright**
 
 ```bash
-git clone -b Playwright-Automation https://github.com/shankar-guru/QA-FrameWork-Documentation.git
+git clone -b Web-Automation-Playwright-Hybrid-Framework https://github.com/shankar-guru/QA-FrameWork-Documentation.git
 ```
 
 **Mobile Automation**
@@ -139,7 +146,7 @@ git clone -b Mobile-Automation https://github.com/shankar-guru/QA-FrameWork-Docu
 **API Testing**
 
 ```bash
-git clone -b API-Testing https://github.com/shankar-guru/QA-FrameWork-Documentation.git
+git clone -b API-Manual-Testing https://github.com/shankar-guru/QA-FrameWork-Documentation.git
 ```
 
 **Performance Testing**
@@ -179,16 +186,23 @@ git pull origin Web-Automation
 
 Replace the branch name with your respective working branch.
 
+**Note:** Responsive Testing documentation is maintained under the `Manual-Test-Cases` branch. Make sure the branch exists remotely before cloning it.
+
 ## 6. Documentation Guidelines
 
 - Follow the respective README instructions available in each testing directory.
 - Maintain consistent test case identification and documentation formats.
 - Update documentation whenever testing scenarios or application functionality changes.
+- Maintain separate responsive test cases and defect logs.
+- Validate applications across the defined screen resolutions and device sizes.
+- Record responsive defects with appropriate screenshots and supporting evidence.
 - Maintain meaningful Git commit messages.
 - Use appropriate branches for individual testing activities.
 - Review changes before merging into the main branch.
 - Avoid committing credentials, sensitive information and unnecessary generated files.
 - Keep automation framework dependencies and setup instructions updated.
+
+
 
 ## 7. Version Control
 
@@ -197,12 +211,12 @@ GitHub is used for source code and documentation version control.
 | Branch | Purpose |
 |---|---|
 | main | Main repository and approved deliverables |
-| Web-Automation | Normal Selenium automation |
-| Web-Hybrid-Automation | Hybrid Selenium automation |
-| Playwright-Automation | Playwright automation |
+| Web-Automation-CucumberFramework | Normal Selenium automation |
+| Web-Automation-HybridFramework | Hybrid Selenium automation |
+| Web-Automation-Playwright-Hybrid-Framework | Playwright automation |
 | Mobile-Automation | Mobile automation |
-| Manual-Test-Cases | Manual testing documentation |
-| API-Testing | API testing |
+| Manual-Test-Cases | Manual and Responsive Testing documentation |
+| API-Manual-Testing | API testing |
 | Performance-Testing | Performance testing |
 
 ### Git Contribution Workflow
@@ -230,6 +244,6 @@ git push origin Web-Automation
 
 **Repository:** QA-FrameWork-Documentation
 
-**Documentation Scope:** Manual Testing, Web Automation (Normal, Hybrid and Playwright), Mobile Automation, API Testing and Performance Testing.
+**Documentation Scope:** Manual Testing, Responsive Testing, Web Automation (Normal, Hybrid and Playwright), Mobile Automation, API Testing and Performance Testing.
 
-**Version:** 1.1
+**Version:** 1.0
