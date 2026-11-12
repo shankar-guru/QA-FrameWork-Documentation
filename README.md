@@ -50,7 +50,7 @@ QA-FrameWork-Documentation/
 |---|---|---|
 | Manual Testing | Functional test case preparation and execution for Web and Mobile applications | Excel |
 | Responsive Testing | Validation of application layouts, elements and functionality across different screen sizes and resolutions | Excel, Browser DevTools |
-| Web Automation – Cucumber Framework | Automated functional testing of Web applications using a basic Selenium framework | Java, Selenium, Cucumber |
+| Web Automation – Cucumber Framework | Automated functional testing of Web applications using a Cucumber Selenium framework | Java, Selenium, Cucumber |
 | Web Automation – Hybrid Framework | Reusable automation framework using Page Object Model, utilities and BDD-based execution | Java, Selenium, Cucumber, TestNG, Maven |
 | Web Automation – Playwright | Automated Web application testing using Playwright | Playwright, JavaScript/TypeScript |
 | Mobile Automation | Automated functional testing of Android applications | Java, Appium, Cucumber, TestNG |
@@ -219,23 +219,7 @@ GitHub is used for source code and documentation version control.
 | API-Manual-Testing | API testing |
 | Performance-Testing | Performance testing |
 
-### Git Contribution Workflow
 
-1. Clone the repository or switch to the required branch.
-2. Pull the latest changes.
-3. Implement the required changes.
-4. Verify the modified files.
-5. Commit changes with a meaningful message.
-6. Push changes to the respective branch.
-7. Create a Pull Request for review and merging.
-
-Example:
-
-```bash
-git status
-git add .
-git commit -m "Updated automation framework"
-git push origin Web-Automation
 ```
 
 ## 8. Maintained By
